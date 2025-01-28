@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General */
+body {
+  margin: 0;
+  font-family: "Lexend Deca", serif;
+  background-color: #007aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container*/
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section */
+.left {
+  background: linear-gradient(135deg, #007aff, #5097e4);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background image */
+.background-img {
+  position: absolute;
+  width: 550px;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+/* images */
+.main-img {
+  width: 300px;
+  z-index: 10;
+}
+
+.small-img {
+  width: 250px;
+  position: absolute;
+  z-index: 5;
+}
+
+.left-img {
+  left: -70px;
+  top: 20px;
+}
+
+.right-img {
+  right: -70px;
+  top: 20px;
+}
+
+.left h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Right section */
+.right {
+  padding: 50px;
+  padding-right: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+.right h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.right .subhead {
+  font-size: 14px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Form */
+.right form {
+  display: flex;
+  flex-direction: column;
+}
+.right form .form-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.right form .form-group div {
+  width: 48%;
+}
+.right form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
+}
+.right form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  margin: -2px -7px;
+  margin-left: -490px;
+  margin-bottom: 12px;
+}
+.checkbox-label {
+  margin-left: -485px;
+  padding-top: 4px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Button*/
+.right form .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  padding-right: -12px;
+}
+.right form .buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.right form .buttons .create-account {
+  background-color: #007bff;
+  color: white;
+  padding-left: 80px;
+}
+.right form .buttons .google-signin {
+  background-color: rgb(19, 18, 18);
+  color: white;
+  padding-left: 70px;
+}
+.right form .buttons {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login {
+  padding-left: 200px;
+  margin-top: 20px;
+}
+
+.login-link {
+  text-decoration: none;
+}
+
+/* Download buttons*/
+.right .download-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 70px;
+}
+.right .download-buttons img {
+  width: 120px;
+}
+
+/* Forget password link */
+.forget-password {
+  display: block;
+  text-align: right;
+  margin-top: -1px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 9px;
+}
+
+/* Tablet media query */
+@media (max-width: 834px) {
+  .container {
+    width: 95%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* image container */
+  .image-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .background-img {
+    width: 300px;
+    opacity: 0.3;
+  }
+
+  .main-img {
+    width: 200px;
+    z-index: 10;
+  }
+
+  .small-img {
+    width: 180px;
+  }
+
+  .left-img {
+    left: -5px;
+    top: 10px;
+  }
+
+  .right-img {
+    right: -5px;
+    top: 10px;
+  }
+  /* left section */
+  .left h2 {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .slide-dots {
+    margin-top: 60px;
+  }
+
+  /* Right section */
+  .right form .form-group {
+    flex-direction: column;
+  }
+
+  .right form .form-group div {
+    width: 100%;
+  }
+
+  .right form input {
+    width: 90%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right form .buttons .create-account {
+    padding-left: 120px;
+  }
+
+  .right form .buttons .google-signin {
+    padding-left: 100px;
+  }
+
+  .checkbox-container {
+    margin-right: -250px;
+    align-items: center;
+  }
+  .checkbox-label {
+    margin-left: -485px;
+    padding-top: 1px;
+  }
+
+  .login {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .download-buttons {
+    justify-content: center;
+  }
+}
+
+/* Mobile media query */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    margin-top: 120px;
+  }
+
+  .right h1 {
+    font-size: 20px;
+  }
+
+  .right .subhead {
+    font-size: 14px;
+  }
+
+  .right form {
+    width: 90%;
+  }
+
+  .right form input {
+    width: 80%;
+  }
+
+  .checkbox-container {
+    margin-right: -355px;
+    align-items: center;
+  }
+  .checkbox-label {
+    margin-left: -480px;
+    padding-top: 1px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 50px;
+    width: 330px;
+  }
+
+  .forget-password {
+    margin-right: 60px;
+  }
+
+  .login {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 210px;
+  }
+
+  .download-buttons {
+    justify-content: center;
+    padding-top: -40px;
+    padding-bottom: 20px;
+    margin-right: 210px;
+  }
+}
+
+/* Mobile Android media query */
+@media (max-width: 390px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .right h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .right .subhead {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .right form {
+    width: 100%;
+  }
+
+  .right form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .checkbox-container {
+    margin-right: -270px;
+    align-items: center;
+  }
+  .checkbox-label {
+    margin-left: -480px;
+    padding-top: 1px;
+  }
+
+  /* .buttons {
+    flex-direction: column; 
+    gap: 15px; 
+    width: 95%; 
+    margin-top: 20px;
+  } */
+
+  .buttons button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .forget-password {
+    margin-right: 20px;
+  }
+
+  .login {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    margin-right: 150px;
+  }
+
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 150px;
+  }
+
+  .download-buttons img {
+    width: 90px;
+  }
+}

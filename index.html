@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://kit.fontawesome.com/522275db79.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left section -->
+      <div class="left">
+        <h2>
+          Social media shared today, tomorrow <br />
+          or by location
+        </h2>
+        <div class="image-container">
+          <img
+            src="/assets/image/Ellipse 2.png"
+            alt="Background Mockup"
+            class="background-img"
+          />
+          <img
+            src="/assets/image/phone.png"
+            alt="Phone Mockup"
+            class="main-img"
+          />
+          <img
+            src="/assets/image/phone.png"
+            alt="Phone Mockup"
+            class="small-img left-img"
+          />
+          <img
+            src="/assets/image/phone.png"
+            alt="Phone Mockup"
+            class="small-img right-img"
+          />
+        </div>
+        <div class="slide-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Right section -->
+      <div class="right">
+        <img
+          src="/assets/image/Logo.png"
+          alt="Logo"
+          style="width: 100px; margin-bottom: 20px"
+        />
+        <h1>Create account</h1>
+        <div class="subhead">For business, band or celebrity</div>
+        <form>
+          <!-- Form group 1 -->
+          <div class="form-group">
+            <div>
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div>
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+          </div>
+
+          <!-- Form group 2 -->
+          <div class="form-group">
+            <div>
+              <label for="email">Email or phone number</label>
+              <input type="text" id="email" name="email" />
+            </div>
+            <div>
+              <label for="dob">Date of birth (dd/mm/yy)</label>
+              <input type="date" id="dob" name="dob" />
+            </div>
+          </div>
+
+          <!-- Form group 3 -->
+          <div class="form-group">
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div>
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+              <a href="#" class="forget-password">Forget password?</a>
+            </div>
+          </div>
+
+          <!-- Checkbox group -->
+          <div class="checkbox-container">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me" class="checkbox-label">Remember Me</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms" />
+            <label for="terms" class="checkbox-label">
+              I agree to the <a href="#" class="link">terms</a> and
+              <a href="#" class="link">privacy policy</a>
+            </label>
+          </div>
+
+          <!-- Buttons -->
+          <div class="buttons">
+            <button type="submit" class="create-account">Create account</button>
+            <button type="button" class="google-signin">
+              <i class="fab fa-google"></i> Sign in with Google
+            </button>
+          </div>
+        </form>
+        <div class="login">
+          Don't have an account? <a href="#" class="login-link">Log in</a>
+        </div>
+
+        <!-- Download buttons -->
+        <div class="download-buttons">
+          <img src="/assets/image/Google Play Badge.png" alt="Google Play" />
+          <img src="/assets/image/App Store Badge.png" alt="App Store" />
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
