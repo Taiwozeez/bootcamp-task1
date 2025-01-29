@@ -340,14 +340,13 @@ body {
   }
 
   .right {
-    width: 100%;
-    padding: 40px;
-    margin: 0 auto;
+    width: 90%;
+    padding-top: 450px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 90%;
-    margin-top: 120px;
   }
 
   .right h1 {
@@ -359,15 +358,15 @@ body {
   }
 
   .right form {
-    width: 90%;
+    width: 100%;
   }
 
   .right form input {
-    width: 80%;
+    width: 85%;
   }
 
   .checkbox-container {
-    margin-right: -355px;
+    margin-right: -280px;
     align-items: center;
   }
   .checkbox-label {
@@ -378,7 +377,7 @@ body {
   .buttons {
     flex-direction: column;
     gap: 50px;
-    width: 330px;
+    width: 350px;
   }
 
   .forget-password {
@@ -388,14 +387,14 @@ body {
   .login {
     text-align: center;
     margin-top: 20px;
-    margin-right: 210px;
+    margin-right: 150px;
   }
 
   .download-buttons {
     justify-content: center;
     padding-top: -40px;
     padding-bottom: 20px;
-    margin-right: 210px;
+    margin-right: 8px;
   }
 }
 
@@ -405,7 +404,6 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    overf
   }
 
   .left {
@@ -420,7 +418,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: auto;
-    margin-top: 30px;
+    padding-top: 290px;
   }
 
   .right h1 {
@@ -455,12 +453,11 @@ body {
     padding-top: 1px;
   }
 
-  /* .buttons {
-    flex-direction: column; 
-    gap: 15px; 
-    width: 95%; 
-    margin-top: 20px;
-  } */
+  .buttons {
+    flex-direction: column;
+    gap: 50px;
+    width: 310px;
+  }
 
   .buttons button {
     padding: 12px;
@@ -475,7 +472,7 @@ body {
     text-align: center;
     margin-top: 15px;
     font-size: 12px;
-    margin-right: 150px;
+    margin-right: 120px;
   }
 
   .download-buttons {
@@ -483,7 +480,7 @@ body {
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-    margin-right: 130px;
+    margin-right: 8px;
   }
 
   .download-buttons img {
